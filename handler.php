@@ -7,6 +7,8 @@
         $formatted = "$date $time (UTC)";
 
         $body = file_get_contents("./templates/microsoft.html");
+
+    
         $body = str_replace("{{email}}", $email, $body);
         $body = str_replace("{{time}}", $formatted, $body);
 
